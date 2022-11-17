@@ -1,0 +1,12 @@
+*** Este arquivo contém os principais pontos do projeto ***
+- Tecnologias usadas:
+QtCreator mais a lingugem c++
+Banco de Dados SqLite v3.4
+
+- Telas:
+1° Tela: tela de splash, tela essa que aparece apenas umas vez, quando o aplicativo abre.
+2° Tela: tela de login, já que é uma gestão de funcionários ao menos um login, para ter a segurança, já que vai ter iserções, alterações e exclusões no programa.
+usuario = @admin senha = @admin12345
+3° Tela: tela principal onde estra reunida todas as informações, trazendo em uma tabela alguns dados do funcionário.
+4° Tela: tela de adicionar um novo funcionário.
+5° Tela: tela de alterar um funcionário escolhido.
