@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>JanelaPrincipal</class>
+ <widget class="QDialog" name="JanelaPrincipal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>577</width>
+    <height>664</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #519eb8;</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>260</y>
+     <width>307</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_6">
+    <item>
+     <widget class="QLabel" name="label_9">
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font-size: 10pt;
+	font-weight: bold;
+	color: #ffffff;
+}</string>
+      </property>
+      <property name="text">
+       <string>Filtrar por: </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="radioButtonTipoFuncionario">
+      <property name="styleSheet">
+       <string notr="true">QRadioButton {
+	color: #ffffff;
+	font-weight: bold;
+}</string>
+      </property>
+      <property name="text">
+       <string>Tipo de Funcionário</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButtonFiltrar">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	border: 1px solid #ffffff;
+	background-color: #428196;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 10.5pt;
+	border-radius: 9px;
+	height: 20px;
+	width: 50px;
+}
+
+QPushButton:hover {
+	background-color: #23444f;
+}</string>
+      </property>
+      <property name="text">
+       <string>Filtrar</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>90</y>
+     <width>308</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font-size: 12pt;
+	font-weight: bold;
+	color: #fff;
+} </string>
+      </property>
+      <property name="text">
+       <string>Função: </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_5">
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font-size: 12pt;
+	color: #ffffff;
+}</string>
+      </property>
+      <property name="text">
+       <string>Administrador do Banco de Dados</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButtonExcluirFuncionario">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>630</y>
+     <width>71</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	border: 1px solid #ffffff;
+	background-color: #428196;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 10.5pt;
+	border-radius: 12px;
+	height: 25px;
+	width: 80px;
+}
+
+QPushButton:hover {
+	background-color: #c36466;
+}</string>
+   </property>
+   <property name="text">
+    <string>Excluir</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>true</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>50</y>
+     <width>188</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font-size: 12pt;
+	font-weight: bold;
+	color: #fff;
+} </string>
+      </property>
+      <property name="text">
+       <string>Nome: </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font-size: 12pt;
+	color: #ffffff;
+}</string>
+      </property>
+      <property name="text">
+       <string>Antonio Fernando</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>210</y>
+     <width>521</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_5">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_8">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font-size: 12pt;
+	font-weight: bold;
+	color: #ffffff;
+}</string>
+        </property>
+        <property name="text">
+         <string>Pesquisa:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+	border: 1px solid #fff;
+	border-radius: 7px;
+	height: 25px;
+	padding-left: 5px;
+	color: #ffffff;
+	font-size: 9.5pt
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string>Pesquise: pelo nome do funcionário</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	border: 1px solid #ffffff;
+	background-color: #428196;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 10.5pt;
+	border-radius: 12px;
+	height: 25px;
+	width: 80px;
+}
+
+QPushButton:hover {
+	background-color: #23444f;
+}</string>
+      </property>
+      <property name="text">
+       <string>Pesquisar</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_5">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>130</y>
+     <width>139</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QLabel" name="label_6">
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font-size: 12pt;
+	font-weight: bold;
+	color: #fff;
+} </string>
+      </property>
+      <property name="text">
+       <string>Código:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_7">
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font-size: 12pt;
+	color: #ffffff;
+}</string>
+      </property>
+      <property name="text">
+       <string>12092001</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>191</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	border: 2px solid #ffffff;
+	border-radius: 95%;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="assets.qrc">:/telaSplah/assets/user_admin.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidgetFuncionarios">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>300</y>
+     <width>521</width>
+     <height>311</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonAlterarDadosFuncionario">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>630</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	border: 1px solid #ffffff;
+	background-color: #428196;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 10.5pt;
+	border-radius: 12px;
+	height: 25px;
+	width: 80px;
+}
+
+QPushButton:hover {
+	background-color: #d3c76c;
+}</string>
+   </property>
+   <property name="text">
+    <string>Alterar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonAddNovoFuncionario">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>623</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	border: 1px solid #ffffff;
+	background-color: #428196;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 10.5pt;
+	border-radius: 12px;
+	height: 25px;
+	width: 80px;
+}
+
+QPushButton:hover {
+	background-color: #70df81;
+}</string>
+   </property>
+   <property name="text">
+    <string>Novo Funcionario</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="assets.qrc"/>
+ </resources>
+ <connections/>
+</ui>

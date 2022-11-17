@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdicionarFuncionario</class>
+ <widget class="QDialog" name="AdicionarFuncionario">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>554</width>
+    <height>666</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #507686;</string>
+  </property>
+  <widget class="QPushButton" name="pushButtonAddNovouncionario">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>620</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	border: 1px solid #ffffff;
+	background-color: #428196;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 10.5pt;
+	border-radius: 15px;
+}
+
+QPushButton:hover {
+	background-color: #23444f;
+}</string>
+   </property>
+   <property name="text">
+    <string>Cadastrar</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>190</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font-size: 9.5pt;
+	color: #ffffff;
+	font-weight: bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>Telefone</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>50</y>
+     <width>251</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font-size: 14pt;
+	font-weight: bold;
+	color: #ffffff;
+}</string>
+   </property>
+   <property name="text">
+    <string>Cadastrar Novo Funcionário</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButtonOperador">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>289</y>
+     <width>91</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QRadioButton {
+	font-size: 9.5pt;
+	color: #ffffff;
+	font-weight: bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>Operador</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditDataIngresso">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>210</y>
+     <width>131</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	border: 1px solid #fff;
+	border-radius: 7px;
+	height: 25px;
+	padding-left: 5px;
+	color: #ffffff;
+	font-size: 9.5pt
+}</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButtonPresidente">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>500</y>
+     <width>91</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QRadioButton {
+	font-size: 9.5pt;
+	color: #ffffff;
+	font-weight: bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>Presidente</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>120</y>
+     <width>49</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font-size: 9.5pt;
+	color: #ffffff;
+	font-weight: bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>Nome</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>190</y>
+     <width>49</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font-size: 9.5pt;
+	color: #ffffff;
+	font-weight: bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>N°</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>49</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font-size: 9.5pt;
+	color: #ffffff;
+	font-weight: bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>Código</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditNome">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>140</y>
+     <width>181</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	border: 1px solid #fff;
+	border-radius: 7px;
+	height: 25px;
+	padding-left: 5px;
+	color: #ffffff;
+	font-size: 9.5pt
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditCodigo">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>140</y>
+     <width>121</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	border: 1px solid #fff;
+	border-radius: 7px;
+	height: 25px;
+	padding-left: 5px;
+	color: #ffffff;
+	font-size: 9.5pt;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>259</y>
+     <width>311</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font-size: 10.5pt;
+	color: #ffffff;
+	font-weight: bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>Informe abaixo  qual a posição do funcionário na empresa</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font-size: 9.5pt;
+	color: #ffffff;
+	font-weight: bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>Endereço</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>191</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font-size: 10.5pt;
+	color: #ffffff;
+	font-weight: bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>Preeencha todos os campos!</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditEndereco">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>210</y>
+     <width>171</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	border: 1px solid #fff;
+	border-radius: 7px;
+	height: 25px;
+	padding-left: 5px;
+	color: #ffffff;
+	font-size: 9.5pt
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>120</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font-size: 9.5pt;
+	color: #ffffff;
+	font-weight: bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>Sobrenome</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>190</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font-size: 9.5pt;
+	color: #ffffff;
+	font-weight: bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>Data de Ingresso</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditNumCasa">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>210</y>
+     <width>41</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	border: 1px solid #fff;
+	border-radius: 7px;
+	height: 25px;
+	padding-left: 5px;
+	color: #ffffff;
+	font-size: 9.5pt
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButtonDiretor">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>410</y>
+     <width>91</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QRadioButton {
+	font-size: 9.5pt;
+	color: #ffffff;
+	font-weight: bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>Diretor</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditNumTelefone">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>210</y>
+     <width>131</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	border: 1px solid #fff;
+	border-radius: 7px;
+	height: 25px;
+	padding-left: 5px;
+	color: #ffffff;
+	font-size: 9.5pt
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonVoltar">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	border: 1px solid #ffffff;
+	background-color: #428196;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 10.5pt;
+	border-radius: 8px;
+}
+
+QPushButton:hover {
+	background-color: #23444f;
+}</string>
+   </property>
+   <property name="text">
+    <string>Voltar</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditSobrenome">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>140</y>
+     <width>181</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	border: 1px solid #fff;
+	border-radius: 7px;
+	height: 25px;
+	padding-left: 5px;
+	color: #ffffff;
+	font-size: 9.5pt
+}</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButtonGerente">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>320</y>
+     <width>91</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QRadioButton {
+	font-size: 9.5pt;
+	color: #ffffff;
+	font-weight: bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>Gerente</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditAreaDeSupervisaoGerente">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>370</y>
+     <width>211</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	border: 1px solid #fff;
+	border-radius: 7px;
+	height: 25px;
+	padding-left: 5px;
+	color: #ffffff;
+	font-size: 9.5pt
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>350</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font-size: 9.5pt;
+	color: #ffffff;
+	font-weight: bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>Área de Supervisão</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditAreaDeSupervisaoDiretor">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>460</y>
+     <width>211</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	border: 1px solid #fff;
+	border-radius: 7px;
+	height: 25px;
+	padding-left: 5px;
+	color: #ffffff;
+	font-size: 9.5pt
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>440</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font-size: 9.5pt;
+	color: #ffffff;
+	font-weight: bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>Área de Supervisão</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditAreaDeFormacaoDiretor">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>460</y>
+     <width>211</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	border: 1px solid #fff;
+	border-radius: 7px;
+	height: 25px;
+	padding-left: 5px;
+	color: #ffffff;
+	font-size: 9.5pt
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>440</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font-size: 9.5pt;
+	color: #ffffff;
+	font-weight: bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>Área de Formação</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditAreaDeFormacaoPresidente">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>550</y>
+     <width>211</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	border: 1px solid #fff;
+	border-radius: 7px;
+	height: 25px;
+	padding-left: 5px;
+	color: #ffffff;
+	font-size: 9.5pt
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>530</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+	font-size: 9.5pt;
+	color: #ffffff;
+	font-weight: bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>Área de Formação</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBoxFormacaoMAxima">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>550</y>
+     <width>111</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <item>
+    <property name="text">
+     <string>-- Escolha --</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Especialista</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Mestre</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Doutorado</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Outro</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

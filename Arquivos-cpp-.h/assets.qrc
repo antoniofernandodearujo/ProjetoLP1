@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/telaSplah">
+        <file>assets/splash-arrendodado (1).png</file>
+        <file>assets/TelaLogin.png</file>
+        <file>assets/user_admin.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>assets/deletar.png</file>
+        <file>assets/update.png</file>
+    </qresource>
+</RCC>
